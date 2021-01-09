@@ -86,7 +86,7 @@ def get_filters():
                 day = 'all'
                 break
             elif (day_filter == 'y') or (day_filter == 'yes'):
-                day = input('Enter the day of week you would like to filter by\nMonday = 0, Tuesday = 1 ...etc\n').lower()
+                day = input('Enter the day of week you would like to filter by\nMonday = 0, Tuesday = 1, Wednesday = 2, Thursday = 3, Friday = 4, Saturday = 5, Sunday = 6\n').lower()
                 if True and (day in allowed_days):
                     if (day == 'monday' or day == 'mon' or day == '0'):
                         day = 0
