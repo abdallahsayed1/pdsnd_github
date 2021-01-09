@@ -7,7 +7,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 allowed_nyc = ['new york city', 'nyc', 'new york', 'ny']
 allowed_chicago = ['chicago', 'chi']
-allowed_washington = ['washington', 'dc','d.c', 'd.c.', 'washington dc']
+allowed_washington = ['washington', 'dc','d.c', 'd.c.', 'washington dc', 'washington d.c', 'washington d.c.']
 allowed_months = ['january', 'febuary', 'march', 'april', 'may', 'june', 'jan','feb','mar','apr','jun', '1', '01', '2', '02', '3', '03', '4', '04', '5', '05', '6', '06']
 allowed_days = ['sunday', 'monday','tuesday','wednesday','thursday', 'friday', 'saturday', 'sun', 'mon', 'tue', 'wed', 'thur', 'fri', 'sat', '0', '1', '2', '3', '4', '5', '6']
 
