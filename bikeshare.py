@@ -7,7 +7,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 allowed_nyc = ['new york city', 'nyc', 'new york', 'ny']
 allowed_chicago = ['chicago', 'chi']
-allowed_washington = ['washington', 'dc','d.c', 'd.c.', 'washington dc']
+allowed_washington = ['washington', 'dc','d.c', 'd.c.', 'washington dc', 'washington d.c', 'washington d.c.']
 allowed_months = ['january', 'febuary', 'march', 'april', 'may', 'june', 'jan','feb','mar','apr','jun', '1', '01', '2', '02', '3', '03', '4', '04', '5', '05', '6', '06']
 allowed_days = ['sunday', 'monday','tuesday','wednesday','thursday', 'friday', 'saturday', 'sun', 'mon', 'tue', 'wed', 'thur', 'fri', 'sat', '0', '1', '2', '3', '4', '5', '6']
 
@@ -86,7 +86,7 @@ def get_filters():
                 day = 'all'
                 break
             elif (day_filter == 'y') or (day_filter == 'yes'):
-                day = input('Enter the day of week you would like to filter by\nMonday = 0, Tuesday = 1 ...etc\n').lower()
+                day = input('Enter the day of week you would like to filter by\nMonday = 0, Tuesday = 1, Wednesday = 2, Thursday = 3, Friday = 4, Saturday = 5, Sunday = 6\n').lower()
                 if True and (day in allowed_days):
                     if (day == 'monday' or day == 'mon' or day == '0'):
                         day = 0
@@ -165,10 +165,12 @@ def time_stats(df):
     # display the most common month
     mode_month = list(df['month'].mode())
     print('The most popular month(s) is/are: ', mode_month)
+    print('January = 1, Febuary = 2, March = 3, April = 4, May = 5, June = 6')
 
     # display the most common day of week
     mode_dow = list(df['day'].mode())
     print('The most common day of week is: ', mode_dow)
+    print('Monday = 0, Tuesday = 1, Wednesday = 2, Thursday = 3, Friday = 4, Saturday = 5, Sunday = 6')
 
     # display the most common start hour
     df['Start Hour'] = df['Start Time'].dt.hour
