@@ -165,6 +165,7 @@ def time_stats(df):
     # display the most common month
     mode_month = list(df['month'].mode())
     print('The most popular month(s) is/are: ', mode_month)
+    print('January = 1, Febuary = 2, March = 3, April = 4, May = 5, June = 6')
 
     # display the most common day of week
     mode_dow = list(df['day'].mode())
