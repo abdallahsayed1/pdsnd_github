@@ -35,7 +35,7 @@ Next you will need to create a virtual environment that runs python 3 and to ins
 To enter an environment you want type:
 `conda activate <name-of your-environment>`
 
-If you dont have a virtual environment this [documentation](https://docs.conda.io/projects/conda/en/4.6.1/user-guide/tasks/manage-environments.html) can help you set one up
+If you don't have a virtual environment this [documentation](https://docs.conda.io/projects/conda/en/4.6.1/user-guide/tasks/manage-environments.html) can help you set one up
 
 Finally to install the packages enter the following:
 
